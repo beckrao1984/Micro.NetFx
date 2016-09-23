@@ -1,10 +1,14 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Linq;
 using System.Threading.Tasks;
 
 namespace Micro.NetFx.Threading.Tasks
 {
+    /// <summary>
+    /// for example:
+    /// Task.Delay(100).Await(); //await Task.Deploy(100);
+    /// var client = new HttpClient();
+    /// var result = client.GetStringAsync("https://www.baidu.com").Await(); // var result = await client.GetStringAsync("https://www.baidu.com");
+    /// </summary>
     public static class TaskExtensions
     {
         public static void Await(this Task task)
