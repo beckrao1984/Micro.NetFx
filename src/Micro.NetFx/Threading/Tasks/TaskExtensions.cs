@@ -5,7 +5,7 @@ namespace Micro.NetFx.Threading.Tasks
 {
     /// <summary>
     /// for example:
-    /// Task.Delay(100).Await(); //await Task.Deploy(100);
+    /// Task.Delay(100).Await(); //await Task.Delay(100);
     /// var client = new HttpClient();
     /// var result = client.GetStringAsync("https://www.baidu.com").Await(); // var result = await client.GetStringAsync("https://www.baidu.com");
     /// </summary>
